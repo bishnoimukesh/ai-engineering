@@ -8,12 +8,12 @@
 ## Session log
 
 - 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
-- 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2).
+- 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2). p2: told after 6 tries.
 
 ## Where I stopped
 
-- Lesson 1, Part 1: p1 done (cat, 2/7). p2 to redo (gave a training sentence). p3 not answered yet.
-- Next step: redo p2 (temperature 0 sentence), p3, then TODO 1 in `next-word.ts`.
+- Lesson 1, Part 1: p1 done (cat, 2/7). p2 done (told: the cat sat on the cat sat on the cat sat on). p3 not answered yet.
+- Next step: p3, then TODO 1 in `next-word.ts`.
 
 ## Timetable
 
