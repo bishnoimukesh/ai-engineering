@@ -8,12 +8,12 @@
 ## Session log
 
 - 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
-- 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" (redo).
+- 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2).
 
 ## Where I stopped
 
-- Lesson 1, Part 1: p1 answered (word right, odds to redo). p2 and p3 not answered yet.
-- Next step: redo the p1 odds, then p2 and p3, then TODO 1 in `next-word.ts`.
+- Lesson 1, Part 1: p1 done (cat, 2/7). p2 and p3 not answered yet.
+- Next step: p2 (temperature 0 sentence), p3, then TODO 1 in `next-word.ts`.
 
 ## Timetable
 
@@ -39,4 +39,4 @@
 
 ## Misconceptions to revisit
 
-- L1 p1: gave the odds of "cat" after "the" as 1/2. Maybe divided by the number of sentences (4), not by the number of times "the" is followed by a word (7).
+- L1 p1: gave the odds of "cat" after "the" as 1/2. Maybe divided by the number of sentences (4), not by the number of times "the" is followed by a word (7). Then missed the "the" in sentence 4, which starts with "a". Fixed: 2/7.
