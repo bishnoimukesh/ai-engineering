@@ -1,19 +1,20 @@
 # My progress
 
 - Started: 2026-11-23 (Monday)
-- Last session: 2026-11-24 (Tuesday)
+- Last session: 2026-11-24 (Tuesday), wrapped up 23:45
 - Now: Week 1, Lesson 1 (what is an LLM) - in progress
 - Next: Week 1, Lesson 2 (tokens, BPE tokenizer, "strawberry")
 
 ## Session log
 
 - 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
-- 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2). p2: told after 6 tries.
+- 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2). p2: told after 6 tries. Wrapped up; note in `notes/2026-11-24-next-word-odds-and-temperature-0.md`.
 
 ## Where I stopped
 
 - Lesson 1, Part 1: p1 done (cat, 2/7). p2 done (told: the cat sat on the cat sat on the cat sat on). p3 not answered yet.
-- Next step: p3, then TODO 1 in `next-word.ts`.
+- Open question: in my own words, why "cat sat on" after the second "the" and not "mat"?
+- Next step: that question, then p3 (which sentences can temperature 1 write?), then TODO 1 in `next-word.ts`.
 
 ## Timetable
 

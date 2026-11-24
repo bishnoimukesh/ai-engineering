@@ -9,3 +9,5 @@
 - When stuck: no answer. Small steps, a simpler problem I know, or a fill-in-the-blank outline.
 - Explain concepts back in my own words. Correct anything slightly off.
 - Explain any JavaScript or TypeScript feature I may not know.
+- Push to GitHub only when an answer is right, or on "wrap up". Wrong answers and redos stay in the chat.
+- At temperature 0, I expected the model to vary its picks or copy a training sentence. Check this again in Lesson 2b.
