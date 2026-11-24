@@ -8,12 +8,12 @@
 ## Session log
 
 - 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
-- 2026-11-24 Tue: linked the repo to Claude. Lesson 1 still open: answer p1 to p3, then TODO 1 (train).
+- 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" (redo).
 
 ## Where I stopped
 
-- Lesson 1, Part 1: the puzzle (p1 to p3), not answered yet.
-- Next step: send p1 to p3 in the chat, then fill TODO 1 in `next-word.ts`.
+- Lesson 1, Part 1: p1 answered (word right, odds to redo). p2 and p3 not answered yet.
+- Next step: redo the p1 odds, then p2 and p3, then TODO 1 in `next-word.ts`.
 
 ## Timetable
 
@@ -39,4 +39,4 @@
 
 ## Misconceptions to revisit
 
-(none yet)
+- L1 p1: gave the odds of "cat" after "the" as 1/2. Maybe divided by the number of sentences (4), not by the number of times "the" is followed by a word (7).
