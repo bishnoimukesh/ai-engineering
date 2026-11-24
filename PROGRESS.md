@@ -1,8 +1,19 @@
 # My progress
 
 - Started: 2026-11-23 (Monday)
+- Last session: 2026-11-24 (Tuesday)
 - Now: Week 1, Lesson 1 (what is an LLM) - in progress
 - Next: Week 1, Lesson 2 (tokens, BPE tokenizer, "strawberry")
+
+## Session log
+
+- 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
+- 2026-11-24 Tue: linked the repo to Claude. Lesson 1 still open: answer p1 to p3, then TODO 1 (train).
+
+## Where I stopped
+
+- Lesson 1, Part 1: the puzzle (p1 to p3), not answered yet.
+- Next step: send p1 to p3 in the chat, then fill TODO 1 in `next-word.ts`.
 
 ## Timetable
 
