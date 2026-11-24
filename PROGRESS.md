@@ -12,8 +12,8 @@
 
 ## Where I stopped
 
-- Lesson 1, Part 1: p1 done (cat, 2/7). p2 and p3 not answered yet.
-- Next step: p2 (temperature 0 sentence), p3, then TODO 1 in `next-word.ts`.
+- Lesson 1, Part 1: p1 done (cat, 2/7). p2 to redo (gave a training sentence). p3 not answered yet.
+- Next step: redo p2 (temperature 0 sentence), p3, then TODO 1 in `next-word.ts`.
 
 ## Timetable
 
@@ -40,3 +40,4 @@
 ## Misconceptions to revisit
 
 - L1 p1: gave the odds of "cat" after "the" as 1/2. Maybe divided by the number of sentences (4), not by the number of times "the" is followed by a word (7). Then missed the "the" in sentence 4, which starts with "a". Fixed: 2/7.
+- L1 p2: temperature 0 sentence given as "the cat sat on the mat", which is a training sentence. Possible model: the generator remembers whole sentences. It only looks back 1 word, so after the second "the" it picks the top word after "the" again.
