@@ -1,7 +1,7 @@
 # My progress
 
 - Started: 2026-11-23 (Monday)
-- Last session: 2026-11-25 (Wednesday)
+- Last session: 2026-11-25 (Wednesday), wrapped up 00:45 on Thu
 - Now: Week 1, Lesson 1 (what is an LLM) - in progress
 - Next: Week 1, Lesson 2 (tokens, BPE tokenizer, "strawberry")
 
@@ -10,16 +10,13 @@
 - 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
 - 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2). p2: told after 6 tries. Wrapped up; note in `notes/2026-11-24-next-word-odds-and-temperature-0.md`.
 - 2026-11-25 Wed: explain-back done with a new case (2 sentences needed, a tie is not enough). p3 told. TODO 1 written and running. TODO 2 done (`>` keeps the first on a tie). TODO 3 done: 9 of 10 sentences NEW.
-- 2026-11-26 Thu (00:45): q1 done after two misses.
+- 2026-11-26 Thu (00:45): q1 done after two misses. Wrapped up; note in `notes/2026-11-25-sampling-temperature-1-and-hallucination.md`.
 
 ## Where I stopped
 
-- Lesson 1, Part 1: p1 done (cat, 2/7). p2 done (told: the cat sat on the cat sat on the cat sat on). p3 not answered yet.
-- Explain-back done (2 "the mat" sentences make temperature 0 write "the mat").
-- p3 done (told: only c). Part 2, TODO 1 (train) done.
-- Part 3, TODO 2 (`pickTop`) done. Part 4, TODO 3 (`pickByOdds`) done. All Lesson 1 code is done.
-- Part 5: q1 done.
-- Next step: Part 5, q2 to q4 in `LESSON.md`.
+- Week 1, Lesson 1, Part 5 (explain it back): q1 done. All Lesson 1 code is done.
+- Next step: q2 (`pickByOdds` with `{ the: 3, a: 1 }` and `random()` = 0.8), then q3 (hallucination in my own words), then q4 (is temperature 0 always correct?).
+- After that: Lesson 2, tokens (BPE tokenizer from scratch, "strawberry").
 
 ## Timetable
 
