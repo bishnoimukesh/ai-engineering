@@ -9,13 +9,14 @@
 
 - 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
 - 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2). p2: told after 6 tries. Wrapped up; note in `notes/2026-11-24-next-word-odds-and-temperature-0.md`.
-- 2026-11-25 Wed: explain-back done with a new case (2 sentences needed, a tie is not enough).
+- 2026-11-25 Wed: explain-back done with a new case (2 sentences needed, a tie is not enough). p3 told. TODO 1 written and running.
 
 ## Where I stopped
 
 - Lesson 1, Part 1: p1 done (cat, 2/7). p2 done (told: the cat sat on the cat sat on the cat sat on). p3 not answered yet.
 - Explain-back done (2 "the mat" sentences make temperature 0 write "the mat").
-- Next step: p3 (which sentences can temperature 1 write?), then TODO 1 in `next-word.ts`.
+- p3 done (told: only c). Part 2, TODO 1 (train) done.
+- Next step: Part 3, TODO 2 (`pickTop`, temperature 0).
 
 ## Timetable
 

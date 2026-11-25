@@ -27,10 +27,10 @@ export function train(sentences: string[]): Counts {
     for (let i = 0; i < words.length - 1; i++) {
       const current = words[i];
       const next = words[i + 1];
-      // TODO(human): add 1 to the count of `next` after `current`.
-      // - counts.get(current) may be undefined the first time you see `current`.
-      // - The inner Map may not have `next` yet either.
-      // 2 to 5 lines.
+      // TODO 1 (done): add 1 to the count of `next` after `current`.
+      const inner = counts.get(current) ?? new Map();
+      inner.set(next, (inner.get(next) ?? 0) + 1);
+      counts.set(current, inner);
     }
   }
   return counts;
