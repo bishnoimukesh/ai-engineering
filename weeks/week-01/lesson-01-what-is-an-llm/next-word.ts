@@ -28,7 +28,7 @@ export function train(sentences: string[]): Counts {
       const current = words[i];
       const next = words[i + 1];
       // TODO 1 (done): add 1 to the count of `next` after `current`.
-      const inner = counts.get(current) ?? new Map();
+      const inner = counts.get(current) ?? new Map<string, number>();
       inner.set(next, (inner.get(next) ?? 0) + 1);
       counts.set(current, inner);
     }
@@ -57,8 +57,19 @@ export function pickTop(options: Map<string, number>): string {
 // `random()` returns a number from 0 (included) to 1 (not included), like Math.random().
 // Call random() exactly once per pick, so your results match a friend's run.
 export function pickByOdds(options: Map<string, number>, random: () => number): string {
-  // TODO(human): see the number-line picture in LESSON.md.
-  throw new Error("TODO(human): pickByOdds");
+  // TODO 3 (done): walk the number line until the random point falls inside a word's piece.
+  let total = 0;
+  for (const count of options.values()) total += count;
+
+  let point = random() * total;
+
+  for (const [word, count] of options) {
+    point -= count;
+    if (point < 0) return word;
+  }
+
+  // safety net for rounding (never reached in practice)
+  return [...options.keys()].at(-1)!;
 }
 
 // ---------- Given: generate a sentence ----------

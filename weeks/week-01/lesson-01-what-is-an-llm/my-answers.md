@@ -44,3 +44,20 @@ return best;
 ```
 
 Output: `the cat sat on the cat sat on the cat sat on`. Matches my p2 answer.
+
+## Part 4: TODO 3, pickByOdds (temperature 1)
+
+```ts
+let total = 0;
+for (const count of options.values()) total += count;
+let point = random() * total;
+for (const [word, count] of options) {
+  point -= count;
+  if (point < 0) return word;
+}
+return [...options.keys()].at(-1)!;
+```
+
+Also typed the inner Map in `train`: `new Map<string, number>()`.
+
+Output: 9 of 10 sentences are `NEW`, e.g. `the dog sat on the mat`. Each pair of words was seen in training, but the whole sentence never was: that's hallucination.
