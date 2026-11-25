@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "lesson1": "tsx weeks/week-01/lesson-01-what-is-an-llm/next-word.ts",
     "l1": "tsx weeks/week-01/lesson-01-what-is-an-llm/next-word.ts"
   },
   "devDependencies": {

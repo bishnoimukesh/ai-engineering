@@ -4,7 +4,7 @@ My own path through the 12-week AI engineering roadmap. Lesson code lives in `we
 
 ```bash
 npm install
-npm run l1
+npm run lesson1
 ```
 
 ## How sessions work
