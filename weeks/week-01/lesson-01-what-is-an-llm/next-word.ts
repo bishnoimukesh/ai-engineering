@@ -40,8 +40,16 @@ export function train(sentences: string[]): Counts {
 // Always pick the most frequent next word.
 // On a tie, keep the word that was seen first (the Map's first one).
 export function pickTop(options: Map<string, number>): string {
-  // TODO(human): loop over `options` and return the word with the highest count.
-  throw new Error("TODO(human): pickTop");
+  // TODO 2 (done): return the word with the highest count; on a tie, keep the first.
+  let best = "";
+  let bestCount = -1;
+  for (const [word, count] of options) {
+    if (count > bestCount) {
+      best = word;
+      bestCount = count;
+    }
+  }
+  return best;
 }
 
 // ---------- TODO 3: temperature 1 ----------

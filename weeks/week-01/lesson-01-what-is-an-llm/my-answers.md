@@ -26,3 +26,21 @@ counts.set(current, inner);
 ```
 
 Output after "the": cat 2 (29%), mat, dog, rug, fish, bone 1 each (14%). Matches my p1 answer of 2/7.
+
+## Part 3: TODO 2, pickTop (temperature 0)
+
+Prediction: use `>` (sure). Right: with `>`, a later word with an equal count does not replace the first, so "sat" beats "ate".
+
+```ts
+let best = "";
+let bestCount = -1;
+for (const [word, count] of options) {
+  if (count > bestCount) {
+    best = word;
+    bestCount = count;
+  }
+}
+return best;
+```
+
+Output: `the cat sat on the cat sat on the cat sat on`. Matches my p2 answer.
