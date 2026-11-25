@@ -10,6 +10,7 @@
 - 2026-11-23 Mon: set up the repo, read the Lesson 1 puzzle.
 - 2026-11-24 Tue: linked the repo to Claude. p1: "cat" (right), "1/2" then "6" then "7, 2/7" (right on redo 2). p2: told after 6 tries. Wrapped up; note in `notes/2026-11-24-next-word-odds-and-temperature-0.md`.
 - 2026-11-25 Wed: explain-back done with a new case (2 sentences needed, a tie is not enough). p3 told. TODO 1 written and running. TODO 2 done (`>` keeps the first on a tie). TODO 3 done: 9 of 10 sentences NEW.
+- 2026-11-26 Thu (00:45): q1 done after two misses.
 
 ## Where I stopped
 
@@ -17,7 +18,8 @@
 - Explain-back done (2 "the mat" sentences make temperature 0 write "the mat").
 - p3 done (told: only c). Part 2, TODO 1 (train) done.
 - Part 3, TODO 2 (`pickTop`) done. Part 4, TODO 3 (`pickByOdds`) done. All Lesson 1 code is done.
-- Next step: Part 5, explain it back (q1 to q4 in `LESSON.md`).
+- Part 5: q1 done.
+- Next step: Part 5, q2 to q4 in `LESSON.md`.
 
 ## Timetable
 
@@ -42,6 +44,8 @@
 - Phase 3 (weeks 9 to 12): Agents in production
 
 ## Misconceptions to revisit
+
+- L1 q1: twice said "cat" and the end-words were tied after "the" (they are 2 vs 1). Mixed it up with the sat/ate tie after "cat". Fixed by tracing `pickTop` by hand. Re-check: read the counts before applying the tie rule.
 
 - L1 p1: gave the odds of "cat" after "the" as 1/2. Maybe divided by the number of sentences (4), not by the number of times "the" is followed by a word (7). Then missed the "the" in sentence 4, which starts with "a". Fixed: 2/7.
 - L1 p2: temperature 0 sentence given as "the cat sat on the mat", which is a training sentence. Possible model: the generator remembers whole sentences. It only looks back 1 word, so after the second "the" it picks the top word after "the" again.

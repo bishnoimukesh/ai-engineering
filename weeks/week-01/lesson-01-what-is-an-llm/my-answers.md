@@ -61,3 +61,8 @@ return [...options.keys()].at(-1)!;
 Also typed the inner Map in `train`: `new Map<string, number>()`.
 
 Output: 9 of 10 sentences are `NEW`, e.g. `the dog sat on the mat`. Each pair of words was seen in training, but the whole sentence never was: that's hallucination.
+
+## Part 5: explain it back
+
+**q1.** Why does temperature 0 never reach `<end>`?
+- My answer: because "cat" has more count. After "the", cat is 2 and mat, rug, fish, bone are 1 each, so "the" always goes to "cat". `<end>` only follows mat, rug, fish or bone, so it is never reached and the output loops.
