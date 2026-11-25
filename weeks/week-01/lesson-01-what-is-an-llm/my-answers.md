@@ -10,4 +10,7 @@
 - My answers: **the cat sat on the cat sat on the cat sat on**
 - Why: each step is a lookup in a fixed table: the -> cat, cat -> sat (a tie with "ate", broken the same way every time), sat -> on, on -> the. The model sees only the current word, so it loops and never reaches `<end>`.
 
+**Explain back.** Why "cat sat on" after the second "the", and not "mat"? Tested with a new case: what's the smallest change to the training data that makes temperature 0 write `the mat`?
+- My answer: add **2** `the mat` sentences. Then "mat" is 3 against "cat" 2, so "mat" wins outright (1 sentence only makes a 2-2 tie, and "cat" wins the tie because it was seen first). After "mat" the only next word is `<end>`, so it stops. I'm not changing the model's rules, I'm changing its training examples.
+
 **p3.** Not answered yet.

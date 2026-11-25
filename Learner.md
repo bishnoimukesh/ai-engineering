@@ -11,3 +11,4 @@
 - Explain any JavaScript or TypeScript feature I may not know.
 - Push to GitHub only when an answer is right, or on "wrap up". Wrong answers and redos stay in the chat.
 - At temperature 0, I expected the model to vary its picks or copy a training sentence. Check this again in Lesson 2b.
+- `my-answers.md` keeps only my final answers, not every attempt.
